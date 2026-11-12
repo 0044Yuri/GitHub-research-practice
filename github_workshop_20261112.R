@@ -9,3 +9,6 @@ df-data.frame(
 )
 
 model<-glm(HF ~ age + sex, data = df, family = binomial)
+
+plot(df$age, df$BMI, 
+     xlab = "Age", ylab = "Body Mass index")
